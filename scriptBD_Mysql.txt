@@ -1,0 +1,12 @@
+CREATE DATABASE dto_keys;
+
+USE dto_keys;
+
+CREATE TABLE IF NOT EXISTS dto_keys.general_keys(
+	idkey INT(11) NOT NULL AUTO_INCREMENT,
+	keycontent VARCHAR(29) NOT NULL,
+ 	serialcontent VARCHAR(30) NOT NULL,
+	keystate INT(1) NOT NULL,
+	bancada VARCHAR(2) NOT NULL,
+	PRIMARY KEY (idkey)
+);
